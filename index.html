@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <title>AGENDA HTML</title>
+  <meta charset="UTF8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body style="background-color:#1D8348;">
+    <form class="" action="index.html" method="post">
+
+
+    <div class="container">
+      <label>SISTEMA DE REGISTRO DE ALUMNOS</label>
+      <P>
+      <input type="text" name="" value="" id="listEmail" hidden=true/>
+      <input type="text" name="" value="1" id="idValueFinal" hidden=true>
+      <div class='row'>
+        <div class='column'>
+          <label>ID Contacto:</label>
+
+        </div>
+        <div class='column'>
+          <input class="inputId inputStyle" type="text" name="" value="1" id="idValue" disabled>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='column'>
+            <P>
+          <label>Nombre:</label>
+
+        </div>
+        <div class='column'>
+          <input class="inputs inputStyle" type="text" id="nombre" name="nombre" value="" maxlength="100"/>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='column'>
+          <P>
+          <label>Edad:</label>
+        </div>
+        <div class='column'>
+          <input class="inputs inputStyle" type="text" id="edad" name="edad" value=""  />
+        </div>
+      </div>
+      <div class='row'>
+        <div class='column'>
+            <P>
+          <label>Correo Eletrónico:</label>
+        </div>
+        <div class='column'>
+          <input class="inputs inputStyle" type="text" id="correo" name="correo" value=""/>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='column'>
+          <div id="buttons" class="buttons">
+              <P>
+              <button type="button" name="buttonAdd" onclick="agregar();">Agregar</button>
+                <P>
+              <button type="button" name="buttonClear" onclick="limpiar();">Limpiar</button>
+              <input  type="text" name="" value=false id="editButton" hidden=true>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <label >En la tabla de abajo podremos ver los alumnos regsitrados en el sistema.</label>
+    <p>
+      <center>
+    <div class="tableContact">
+      <table id="tableC">
+        <thead>
+            <tr>
+              <th>ID</th>
+              <th>NOMBRE COMPLETO</th>
+              <th>EDAD</th>
+              <th>CCORREO ELECTRONICO</th>
+              <th>BOTONES</th>
+            </tr>
+        </thead>
+        <tbody  id="contactos">
+        </tbody>
+      </table>
+    </div>
+    </center>
+    <script src="funciones.js"></script>
+      </form>
+  </body>
+</html>

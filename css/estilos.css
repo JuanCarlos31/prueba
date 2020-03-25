@@ -1,0 +1,16 @@
+form {
+text-align: center;
+width: 35em;
+margin: 0 auto;
+padding: 1em;
+border: 1px solid #E0E0E0;
+font-size: 1em;
+font-family: monospace;
+line-height: 1;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+background: #F5F5F5;
+}
+
+label{
+   font-family: "Homer Simpson", cursive;
+}
